@@ -13,7 +13,6 @@ tasks:
       input: {}
       array: ''
       trackBy: ''
-      schedule: rate(1 day)
       accounts:
         slack: slack1
 paths:
