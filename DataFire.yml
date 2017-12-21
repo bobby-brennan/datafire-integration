@@ -9,12 +9,13 @@ tasks:
     schedule: rate(1 minute)
     action: log
     monitor:
-      action: reddit_rss/subreddit
-      input:
-        subreddit: gifs
-      array: feed.entries
-      trackBy: ideoa
+      action: slack/bots_info
+      input: {}
+      array: ''
+      trackBy: ''
       schedule: rate(1 day)
+      accounts:
+        slack: slack1
 paths:
   /paths0:
     get:
