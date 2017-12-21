@@ -13,7 +13,8 @@ tasks:
       input:
         subreddit: gifs
       array: feed.entries
-      trackBy: link
+      trackBy: ideoa
+      schedule: rate(1 day)
 paths:
   /paths0:
     get:
