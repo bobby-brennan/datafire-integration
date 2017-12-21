@@ -8,3 +8,7 @@ tasks:
   task:
     schedule: rate(1 day)
     action: log
+paths:
+  /paths0:
+    get:
+      action: reddit_rss/frontPage
