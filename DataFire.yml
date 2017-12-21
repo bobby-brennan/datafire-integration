@@ -6,8 +6,14 @@ integrations:
   marketoOAuth: ./integrations/marketo/index.js
 tasks:
   task:
-    schedule: rate(1 day)
+    schedule: rate(1 minute)
     action: log
+    monitor:
+      action: reddit_rss/subreddit
+      input:
+        subreddit: gifs
+      array: feed.entries
+      trackBy: link
 paths:
   /paths0:
     get:
