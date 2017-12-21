@@ -4,17 +4,7 @@ actions:
   log: ./actions/log.js
 integrations:
   marketoOAuth: ./integrations/marketo/index.js
-tasks:
-  task:
-    schedule: rate(1 minute)
-    action: log
-    monitor:
-      action: slack/bots_info
-      input: {}
-      array: ''
-      trackBy: ''
-      accounts:
-        slack: slack1
+tasks: {}
 paths:
   /paths0:
     get:
