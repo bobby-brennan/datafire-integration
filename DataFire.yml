@@ -1,7 +1,7 @@
 options:
   cors: true
 actions:
-  action_foo: ./actions/action_foo.js
+  action_foo: ./actions/action_foobar.js
 integrations:
   marketoOAuth: ./integrations/marketo/index.js
 tasks: {}
