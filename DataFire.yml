@@ -1,7 +1,11 @@
 options:
   cors: true
-actions: {}
-tasks: {}
+actions:
+  log_new_reddit_links: ./actions/log_new_reddit_links.js
+tasks:
+  task:
+    schedule: rate(1 day)
+    action: log_new_reddit_links
 paths:
   /paths0:
     get:
