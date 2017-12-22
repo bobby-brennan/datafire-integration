@@ -1,6 +1,7 @@
 options:
   cors: true
-actions: {}
+actions:
+  log: ./actions/log.js
 integrations:
   marketoOAuth: ./integrations/marketo/index.js
 tasks: {}
