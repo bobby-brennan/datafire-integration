@@ -1,8 +1,6 @@
 options:
   cors: true
 actions: {}
-integrations:
-  marketoOAuth: ./integrations/marketo/index.js
 tasks: {}
 paths:
   /paths0:
